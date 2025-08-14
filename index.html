@@ -8,9 +8,10 @@
     body, html {
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: #333;
     }
-    /* HERO部分 */
+    /* HERO */
     .hero {
       position: relative;
       height: 100vh;
@@ -23,16 +24,52 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,0.3);
+      background: rgba(0,0,0,0.35);
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+      text-align: center;
     }
     .overlay h1 {
       color: white;
-      font-size: 3rem;
-      text-align: center;
+      font-size: 2.8rem;
+      margin: 0;
       padding: 0 20px;
+    }
+    /* セクション共通 */
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+    /* 動画ギャラリー */
+    .video-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .video-item iframe {
+      width: 320px;
+      height: 180px;
+      border: none;
+    }
+    /* フッター */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -44,6 +81,46 @@
       <h1>ブランドの温度を、映像で残す。</h1>
     </div>
   </section>
+
+  <!-- ポートフォリオ -->
+  <section id="works">
+    <h2>Showreel</h2>
+    <div class="video-list">
+      <div class="video-item">
+        <iframe src="https://player.vimeo.com/video/996504663" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="https://player.vimeo.com/video/1103702656" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="https://player.vimeo.com/video/1035963732" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- プロフィール -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; line-height:1.8;">
+      竹脇郁弥（Fumiya Takewaki）<br>
+      映像クリエイターとして、企業PR・ブランディングムービー、ウェディングムービー、SNS縦型動画、イベント撮影/編集など幅広く制作。<br>
+      制作スピードとクオリティに自信があります。
+    </p>
+  </section>
+
+  <!-- コン tact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">
+      📧 <a href="mailto:liquidfilm0238@gmail.com">liquidfilm0238@gmail.com</a><br>
+      📷 <a href="https://instagram.com/liquidfilm0238" target="_blank">@liquidfilm0238</a>
+    </p>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 Fumiya Takewaki</p>
+  </footer>
 
 </body>
 </html>
